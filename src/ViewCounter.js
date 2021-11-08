@@ -4,10 +4,11 @@ import { useCount } from './CountContext'
 
 const ViewCounter = () => {
   // set state count from useCount
+  const count = useCount();
   return (
     <div>
       {/* change 0 with count from context */}
-      Count is 0
+      Count : {count.state.count}
     </div>
   );
 }
